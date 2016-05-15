@@ -3038,3 +3038,37 @@ Processing by HomeController#buscar as JSON
   [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
 Completed 200 OK in 1566ms (Views: 5.4ms | ActiveRecord: 0.5ms)
   [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (1.1ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2080ms (Views: 11.2ms | ActiveRecord: 5.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 687ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1516ms (Views: 17.3ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1611ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
