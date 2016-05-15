@@ -1,8 +1,8 @@
-# T2tallerintegracion
+# Tarea2 Taller de integración
 
-Commit data: [![Build Status](https://api.travis-ci.org/eczerega/integrat2enzozerega.png)](https://travis-ci.org/eczerega/T2tallerintegracion)
+Commit data: [![Build Status](https://api.travis-ci.org/eczerega/integrat2enzozerega.png)](https://travis-ci.org/eczerega/integrat2enzozerega)
 
-Coverage: [![Coverage Status](https://coveralls.io/repos/github/eczerega/integrat2enzozerega/badge.svg?branch=master)](https://coveralls.io/github/eczerega/T2tallerintegracion?branch=master)
+Coverage: [![Coverage Status](https://coveralls.io/repos/github/eczerega/integrat2enzozerega/badge.svg?branch=master)](https://coveralls.io/github/eczerega/integrat2enzozerega?branch=master)
 
 Corrección:
 
