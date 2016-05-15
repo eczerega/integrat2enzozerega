@@ -1,23 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/helpers/api_helper.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/helpers/api_helper.rb": [
         1,
         null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/helpers/application_helper.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/helpers/home_helper.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/helpers/updates_helper.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/helpers/updates_helper.rb": [
         1,
         null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/controllers/home_controller.rb": [
         1,
         1,
         1,
@@ -85,6 +85,10 @@
         null,
         3,
         3,
+        0,
+        null,
+        3,
+        null,
         6,
         null,
         null,
@@ -104,22 +108,22 @@
         null,
         null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/application_controller.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/api_controller.rb": [
-        0,
-        0
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/models/update.rb": [
+        1,
+        null
       ],
-      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/models/update.rb": [
+      "/Users/eczerega/Desktop/taleer/tareas/T2/T2_final/app/controllers/api_controller.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1463340780
+    "timestamp": 1463345816
   }
 }
