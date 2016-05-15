@@ -1,0 +1,3006 @@
+  [1m[36m (438.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_test"[0m
+  [1m[35m (1522.4ms)[0m  CREATE DATABASE "T2_test" ENCODING = 'unicode'
+  [1m[36mSQL (61.9ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (62.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.9ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (174.6ms)[0m  [1mDROP DATABASE IF EXISTS "T2_test"[0m
+  [1m[35m (1282.8ms)[0m  CREATE DATABASE "T2_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (125.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (290.1ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.8ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (19.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (240.8ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (2178.8ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (40.0ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (49.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (23.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (185.9ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1934.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (14.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (1.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (214.2ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1418.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (26.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (158.5ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1341.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (186.5ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1759.1ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (9.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (379.8ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (2696.9ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (303.1ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1423.0ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (222.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1496.1ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1210.9ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (5142.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (213.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (43.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (219.3ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (2537.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (75.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (8.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (194.9ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1339.8ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2080ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (175.4ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (2627.9ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (21.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1666ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (279.4ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (4905.2ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (176.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (265.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (264.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1916ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (392.3ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (6538.8ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (229.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (63.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.9ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (13.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1391ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 478ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (575.2ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (2140.0ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2921ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 659ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (176.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1262.3ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1617ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 677ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (197.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (4353.9ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1559ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 666ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (219.5ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1976.2ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1625ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 668ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (164.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1399.5ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.8ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2075ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 666ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1531ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (165.8ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1344.5ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1578ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 713ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1585ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (199.0ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (3236.7ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1643ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 667ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1743ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1543ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (179.9ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1420.9ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1591ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 662ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1536ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1542ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (169.1ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1381.0ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2229ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 658ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1538ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1551ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (125.6ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (339.8ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1567ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 668ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1516ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1540ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (242.3ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1676.7ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2017ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 667ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1570ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1559ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (130.2ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1406.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1676ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 659ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1521ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1528ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (235.1ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1327.9ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (27.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1560ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 660ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1553ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1525ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (148.2ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1310.4ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (32.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1647ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 675ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1502ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1528ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (125.1ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1185.5ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.2ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2003ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 676ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1552ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1557ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (146.4ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1322.3ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (26.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.9ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1560ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 685ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1510ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1535ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (125.7ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1130.4ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (71.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1690ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 687ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1639ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1536ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (124.9ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (2076.5ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1937ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 668ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1610ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1521ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (128.5ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (267.7ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2033ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 659ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1549ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1537ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (126.5ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (368.6ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (30.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (1.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.8ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1533ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 658ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1537ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1523ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (189.0ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (3136.7ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (9.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (20.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (39.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2016ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 676ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1562ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1722ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (197.3ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1325.0ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1530ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 660ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1520ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1590ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (201.3ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1353.3ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (6.0ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (27.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2063ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 666ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1553ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1539ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (189.4ms)[0m  [1mDROP DATABASE IF EXISTS "T2_testing"[0m
+  [1m[35m (1807.8ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.6ms)[0m  CREATE TABLE "updates" ("id" serial primary key, "version" integer, "date" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160515174621')
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (1.3ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 2058ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 673ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1566ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1658ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "updates"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:08:40 -0300
+Processing by UpdatesController#index as HTML
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT "updates".* FROM "updates"
+  Rendered updates/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 1085ms (Views: 1052.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (19.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (19.4ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:08:41.353050"], ["updated_at", "2016-05-15 18:08:41.353050"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/_form.html.erb (93.6ms)
+  Rendered updates/edit.html.erb (164.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:08:41.703750"], ["updated_at", "2016-05-15 18:08:41.703750"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:08:41.706219"], ["updated_at", "2016-05-15 18:08:41.706219"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/index.html.erb (3.1ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered updates/_form.html.erb (1.7ms)
+  Rendered updates/new.html.erb (2.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:08:41.769678"], ["updated_at", "2016-05-15 18:08:41.769678"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/show.html.erb (1.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 10426ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 407ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1375ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1036ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 118ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:11:30 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 438ms (Views: 404.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (15.7ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:11:31.499400"], ["updated_at", "2016-05-15 18:11:31.499400"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (67.5ms)
+  Rendered updates/edit.html.erb (128.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:11:31.706694"], ["updated_at", "2016-05-15 18:11:31.706694"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:11:31.708890"], ["updated_at", "2016-05-15 18:11:31.708890"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (2.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.6ms)
+  Rendered updates/new.html.erb (3.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:11:31.765112"], ["updated_at", "2016-05-15 18:11:31.765112"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.6ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (1.2ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1690ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 691ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1602ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1676ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 170ms (Views: 165.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:14:13 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 844ms (Views: 791.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (38.5ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:14:14.010449"], ["updated_at", "2016-05-15 18:14:14.010449"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (211.9ms)
+  Rendered updates/edit.html.erb (294.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:14:14.452614"], ["updated_at", "2016-05-15 18:14:14.452614"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:14:14.454856"], ["updated_at", "2016-05-15 18:14:14.454856"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (3.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (2.2ms)
+  Rendered updates/new.html.erb (3.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:14:14.540771"], ["updated_at", "2016-05-15 18:14:14.540771"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 2090ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 704ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1632ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1717ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:19:20 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 418ms (Views: 385.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (6.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (27.7ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:19:21.265456"], ["updated_at", "2016-05-15 18:19:21.265456"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (75.5ms)
+  Rendered updates/edit.html.erb (131.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:19:21.487601"], ["updated_at", "2016-05-15 18:19:21.487601"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:19:21.489465"], ["updated_at", "2016-05-15 18:19:21.489465"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (2.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.7ms)
+  Rendered updates/new.html.erb (2.6ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:19:21.542960"], ["updated_at", "2016-05-15 18:19:21.542960"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 2124ms (Views: 0.2ms | ActiveRecord: 3.7ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 683ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1615ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.8ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1544ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 108ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:21:04 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 384ms (Views: 351.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (17.1ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:21:05.174122"], ["updated_at", "2016-05-15 18:21:05.174122"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (69.9ms)
+  Rendered updates/edit.html.erb (129.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:21:05.405804"], ["updated_at", "2016-05-15 18:21:05.405804"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:21:05.407699"], ["updated_at", "2016-05-15 18:21:05.407699"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (3.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.7ms)
+  Rendered updates/new.html.erb (2.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:21:05.463622"], ["updated_at", "2016-05-15 18:21:05.463622"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 2119ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 728ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1650ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1641ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 96ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:24:41 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 401ms (Views: 368.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (20.9ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:24:41.533325"], ["updated_at", "2016-05-15 18:24:41.533325"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (91.3ms)
+  Rendered updates/edit.html.erb (152.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:24:41.753345"], ["updated_at", "2016-05-15 18:24:41.753345"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:24:41.755214"], ["updated_at", "2016-05-15 18:24:41.755214"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (2.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (2.2ms)
+  Rendered updates/new.html.erb (3.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:24:41.807099"], ["updated_at", "2016-05-15 18:24:41.807099"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1618ms (Views: 0.2ms | ActiveRecord: 3.7ms)
+  [1m[35m (1.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 701ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1578ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1653ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:27:12 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.6ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 355ms (Views: 344.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (15.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:27:12.767251"], ["updated_at", "2016-05-15 18:27:12.767251"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (59.6ms)
+  Rendered updates/edit.html.erb (121.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:27:12.967463"], ["updated_at", "2016-05-15 18:27:12.967463"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:27:12.969354"], ["updated_at", "2016-05-15 18:27:12.969354"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (1.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.7ms)
+  Rendered updates/new.html.erb (2.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:27:13.014910"], ["updated_at", "2016-05-15 18:27:13.014910"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1750ms (Views: 8.1ms | ActiveRecord: 3.6ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 696ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1626ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1653ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:29:01 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 326ms (Views: 315.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:29:01.973862"], ["updated_at", "2016-05-15 18:29:01.973862"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (63.1ms)
+  Rendered updates/edit.html.erb (128.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:29:02.195223"], ["updated_at", "2016-05-15 18:29:02.195223"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:29:02.197280"], ["updated_at", "2016-05-15 18:29:02.197280"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (3.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.7ms)
+  Rendered updates/new.html.erb (2.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:29:02.249592"], ["updated_at", "2016-05-15 18:29:02.249592"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (1.2ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 2161ms (Views: 0.3ms | ActiveRecord: 70.9ms)
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 740ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 400 Bad Request in 1640ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 1784ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 128ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:44:28 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 383ms (Views: 349.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:44:29.207741"], ["updated_at", "2016-05-15 18:44:29.207741"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (80.9ms)
+  Rendered updates/edit.html.erb (142.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:44:29.395857"], ["updated_at", "2016-05-15 18:44:29.395857"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:44:29.398301"], ["updated_at", "2016-05-15 18:44:29.398301"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (1.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (2.0ms)
+  Rendered updates/new.html.erb (2.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:44:29.445190"], ["updated_at", "2016-05-15 18:44:29.445190"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (38.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:46:10 -0300"], ["created_at", "2016-05-15 18:46:10.081265"], ["updated_at", "2016-05-15 18:46:10.081265"]]
+  [1m[35m (42.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.8ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2134ms (Views: 3.7ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 1780ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1836ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1658ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:46:17 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.6ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 382ms (Views: 349.7ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:46:18.403732"], ["updated_at", "2016-05-15 18:46:18.403732"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (115.7ms)
+  Rendered updates/edit.html.erb (209.8ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:46:18.670852"], ["updated_at", "2016-05-15 18:46:18.670852"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:46:18.672778"], ["updated_at", "2016-05-15 18:46:18.672778"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (3.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.6ms)
+  Rendered updates/new.html.erb (2.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:46:18.732280"], ["updated_at", "2016-05-15 18:46:18.732280"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (25.8ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:47:43 -0300"], ["created_at", "2016-05-15 18:47:43.646361"], ["updated_at", "2016-05-15 18:47:43.646361"]]
+  [1m[35m (30.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.7ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1836ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 733ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1790ms (Views: 4.8ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1635ms (Views: 5.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:47:50 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 387ms (Views: 354.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:47:50.468779"], ["updated_at", "2016-05-15 18:47:50.468779"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (148.4ms)
+  Rendered updates/edit.html.erb (221.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:47:50.766668"], ["updated_at", "2016-05-15 18:47:50.766668"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:47:50.769615"], ["updated_at", "2016-05-15 18:47:50.769615"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (1.8ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (2.3ms)
+  Rendered updates/new.html.erb (3.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:47:50.825398"], ["updated_at", "2016-05-15 18:47:50.825398"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.9ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1802ms (Views: 9.2ms | ActiveRecord: 5.5ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 724ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mUpdate Load (0.2ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1729ms (Views: 17.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mUpdate Load (0.3ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1781ms (Views: 4.8ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 193ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "updates"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:48:31 -0300
+Processing by UpdatesController#index as HTML
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT "updates".* FROM "updates"
+  Rendered updates/index.html.erb within layouts/application (57.3ms)
+Completed 200 OK in 786ms (Views: 752.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (39.4ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:48:32.214640"], ["updated_at", "2016-05-15 18:48:32.214640"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/_form.html.erb (203.6ms)
+  Rendered updates/edit.html.erb (529.1ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:48:32.879349"], ["updated_at", "2016-05-15 18:48:32.879349"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:48:32.881393"], ["updated_at", "2016-05-15 18:48:32.881393"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/index.html.erb (3.7ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered updates/_form.html.erb (1.8ms)
+  Rendered updates/new.html.erb (2.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:48:33.075465"], ["updated_at", "2016-05-15 18:48:33.075465"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/show.html.erb (3.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (37.9ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:54:41 -0300"], ["created_at", "2016-05-15 18:54:41.395621"], ["updated_at", "2016-05-15 18:54:41.395621"]]
+  [1m[35m (52.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (26.5ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:55:54 -0300"], ["created_at", "2016-05-15 18:55:54.700538"], ["updated_at", "2016-05-15 18:55:54.700538"]]
+  [1m[35m (30.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (23.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2056ms (Views: 8.9ms | ActiveRecord: 150.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1728ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 761ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1923ms (Views: 5.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1691ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 102ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "updates"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 15:59:31 -0300
+Processing by UpdatesController#index as HTML
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT "updates".* FROM "updates"
+  Rendered updates/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 416ms (Views: 381.4ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (31.5ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 18:59:32.261821"], ["updated_at", "2016-05-15 18:59:32.261821"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/_form.html.erb (93.6ms)
+  Rendered updates/edit.html.erb (154.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:59:32.527069"], ["updated_at", "2016-05-15 18:59:32.527069"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:59:32.528971"], ["updated_at", "2016-05-15 18:59:32.528971"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/index.html.erb (1.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered updates/_form.html.erb (1.9ms)
+  Rendered updates/new.html.erb (2.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 18:59:32.574841"], ["updated_at", "2016-05-15 18:59:32.574841"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/show.html.erb (1.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.8ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2095ms (Views: 7.9ms | ActiveRecord: 4.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 731ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1694ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1700ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "updates"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 16:01:23 -0300
+Processing by UpdatesController#index as HTML
+  [1m[36mUpdate Load (0.5ms)[0m  [1mSELECT "updates".* FROM "updates"[0m
+  Rendered updates/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 782ms (Views: 749.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.9ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 19:01:24.346015"], ["updated_at", "2016-05-15 19:01:24.346015"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/_form.html.erb (63.4ms)
+  Rendered updates/edit.html.erb (120.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:01:24.602268"], ["updated_at", "2016-05-15 19:01:24.602268"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:01:24.604717"], ["updated_at", "2016-05-15 19:01:24.604717"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/index.html.erb (1.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered updates/_form.html.erb (1.7ms)
+  Rendered updates/new.html.erb (2.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:01:24.660634"], ["updated_at", "2016-05-15 19:01:24.660634"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/show.html.erb (2.1ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1838ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 752ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1734ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1777ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UpdatesController#new as HTML
+  Rendered updates/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 79ms (Views: 69.5ms | ActiveRecord: 3.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "updates"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/updates" for 127.0.0.1 at 2016-05-15 16:11:22 -0300
+Processing by UpdatesController#index as HTML
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT "updates".* FROM "updates"
+  Rendered updates/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 409ms (Views: 375.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (53.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 19:11:23.222174"], ["updated_at", "2016-05-15 19:11:23.222174"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/_form.html.erb (87.4ms)
+  Rendered updates/edit.html.erb (154.6ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:11:23.502376"], ["updated_at", "2016-05-15 19:11:23.502376"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:11:23.504515"], ["updated_at", "2016-05-15 19:11:23.504515"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered updates/index.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered updates/_form.html.erb (1.6ms)
+  Rendered updates/new.html.erb (2.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:11:23.550857"], ["updated_at", "2016-05-15 19:11:23.550857"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered updates/show.html.erb (1.1ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1749ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 736ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1702ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1716ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (31.4ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 19:21:17.416092"], ["updated_at", "2016-05-15 19:21:17.416092"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:21:17.525504"], ["updated_at", "2016-05-15 19:21:17.525504"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:21:17.528137"], ["updated_at", "2016-05-15 19:21:17.528137"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:21:17.566475"], ["updated_at", "2016-05-15 19:21:17.566475"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2167ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 774ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1763ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2262ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (31.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "MyString"], ["created_at", "2016-05-15 19:30:41.149701"], ["updated_at", "2016-05-15 19:30:41.149701"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:30:41.234500"], ["updated_at", "2016-05-15 19:30:41.234500"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:30:41.236450"], ["updated_at", "2016-05-15 19:30:41.236450"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "Date"], ["created_at", "2016-05-15 19:30:41.277289"], ["updated_at", "2016-05-15 19:30:41.277289"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1886ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"token malo"}
+Completed 400 Bad Request in 762ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"access_token"=>"token malo"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1813ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1763ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m

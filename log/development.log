@@ -1,0 +1,2374 @@
+  [1m[36m (245.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 15:50:38 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (8.3ms)
+Completed 200 OK in 84ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 21:11:26 -0300
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (84.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (145.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (244.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 21:11:27 -0300
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (78.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 21:11:42 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2438ms (Views: 2437.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-11 21:11:44 -0300
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 21:56:29 -0300
+Processing by HomeController#buscar as */*
+  Parameters: {"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd", "home"=>{"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.6) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.6) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.6) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (144.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (245.7ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 21:56:59 -0300
+Processing by HomeController#buscar as */*
+  Parameters: {"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd", "home"=>{"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template home/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (73.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.7ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 21:57:01 -0300
+Processing by HomeController#buscar as */*
+  Parameters: {"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd", "home"=>{"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template home/buscar, application/buscar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (82.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.9ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 21:57:43 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd", "home"=>{"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 22:04:19 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd", "home"=>{"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 22:04:44 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...rrors => parametros incorrectos.to_json }, :status => 400 }
+...                               ^
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:14: syntax error, unexpected ',', expecting keyword_end
+...rametros incorrectos.to_json }, :status => 400 }
+...                               ^):
+  app/controllers/home_controller.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/controllers/home_controller.rb:14: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.7ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 22:05:00 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd", "home"=>{"canal"=>"b2b", "cantidad"=>2, "sku"=>"123", "cliente"=>"12", "proveedor"=>"11", "precioUnitario"=>123, "fechaEntrega"=>2322212312334, "notas"=>"asdasd"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 22:05:35 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"b2b", "home"=>{"tag"=>"b2b"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-11 22:06:59 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"b2b", "home"=>{"tag"=>"b2b"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:02:47 -0300
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 34ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:07:29 -0300
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:07:43 -0300
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:08:03 -0300
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:08:48 -0300
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:09:02 -0300
+Processing by HomeController#buscar as JSON
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:09:22 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"asdasd"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:09:32 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "token"=>"sss"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:10:20 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:10:23 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_tokens"=>"sss"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:10:25 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:20:07 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 1326ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:21:07 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 756ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:21:15 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 678ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:21:41 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 1125ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:22:10 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 200 OK in 725ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:25:05 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...pi.instagram.com/v1/tags/"+tag"?access_token=1"+access_token)
+...                               ^
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:11: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/home_controller.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/controllers/home_controller.rb:11: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (172.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (318.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (512.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:26:06 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+		rescue Exception => e
+		      ^):
+  app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (175.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (99.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (316.1ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:26:33 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+			rescue Exception => e
+			      ^):
+  app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (197.7ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:26:58 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+  app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.3ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:27:29 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:28: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+  app/controllers/home_controller.rb:28: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/home_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (180.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:27:54 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"ola vv", "access_token"=>"sss"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): https://api.instagram.com/v1/tags/ola vv?access_token=1sss):
+  app/controllers/home_controller.rb:11:in `block in buscar'
+  app/controllers/home_controller.rb:10:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:28:33 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"olvv", "access_token"=>"sss"}
+Completed 500 Internal Server Error in 1157ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:19:in `block in buscar'
+  app/controllers/home_controller.rb:10:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.5ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:29:04 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/home_controller.rb:23: syntax error, unexpected keyword_rescue, expecting keyword_end
+  app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:31:02 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"olvv", "access_token"=>"sss"}
+Completed 500 Internal Server Error in 1142ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template home/buscar, application/buscar with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (120.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:31:14 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"olvv", "access_token"=>"sss"}
+Completed 500 Internal Server Error in 692ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template home/buscar, application/buscar with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (86.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:31:50 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"olvv", "access_token"=>"sss"}
+Completed 400 Bad Request in 1128ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:32:30 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:29: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/home_controller.rb:29: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:33:36 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:29: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/home_controller.rb:29: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/home_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (82.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:34:05 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"olvv", "access_token"=>"sss"}
+Completed 500 Internal Server Error in 715ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:21:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (252.1ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:34:49 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1116ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:21:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:35:16 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 663ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:22:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.2ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:35:58 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 685ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:22:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.3ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:38:48 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 706ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:39:08 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 696ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:39:31 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1111ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:39:41 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da3s9352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1137ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:24:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.7ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:40:49 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da3s9352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 718ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:56:39 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1146ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:56:44 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jon snow", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:58:16 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"jonsnow", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 722ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:58:27 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 669ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:05:12 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2181ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:11:24 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2405ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:11:53 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2176ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:12:19 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1762ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:12:59 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1593ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:13:20 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1469ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:13:49 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1985ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:14:15 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1554ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:14:25 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1225ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:15:00 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 1531ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:15:29 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:58: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/home_controller.rb:58: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:15:51 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1568ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of String into Integer):
+  app/controllers/home_controller.rb:35:in `[]'
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.8ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:16:23 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2288ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:17:02 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 2257ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Array into String):
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (129.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (125.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (250.3ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:17:23 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1904ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:17:37 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1163ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of String into Integer):
+  app/controllers/home_controller.rb:36:in `[]'
+  app/controllers/home_controller.rb:36:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:19:02 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1156ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:19:22 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1946ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:19:30 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1925ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:20:46 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1427ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:21:04 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1853ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:21:42 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1936ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:22:10 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2071ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:22:43 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2529ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:24:01 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1066ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:30:48 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1521ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_i' for {"count"=>0, "data"=>[]}:Hash):
+  app/controllers/home_controller.rb:39:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:36:in `each'
+  app/controllers/home_controller.rb:36:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.1ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:31:19 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1752ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:32:28 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1056ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:33:55 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"totti", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1070ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:34:21 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1120ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:35:18 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1881ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:36:01 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1093ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:37:00 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1152ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `caption' for #<HomeController:0x007fc04b703ad8>):
+  app/controllers/home_controller.rb:45:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:40:in `each'
+  app/controllers/home_controller.rb:40:in `block in buscar'
+  app/controllers/home_controller.rb:12:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (177.5ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:37:16 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1244ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:41:11 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1195ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:41:22 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1075ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:41:59 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1471ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:42:11 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1507ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:42:50 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1471ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:46:34 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1611ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant HomeController::Arrat):
+  app/controllers/home_controller.rb:30:in `block in buscar'
+  app/controllers/home_controller.rb:11:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (149.5ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:46:55 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1192ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:47:29 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1200ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:48:05 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1429ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:37:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:35:in `each'
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:11:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (124.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (232.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:48:16 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1531ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:49:22 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1203ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:49:51 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1506ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:51:21 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1126ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `usernmae' for #<HomeController:0x007fc04fd43340>):
+  app/controllers/home_controller.rb:42:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:35:in `each'
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:11:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (155.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:51:57 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1528ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:53:38 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"dragonballsuper", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1011ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:58:15 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1247ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 12:05:28 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 619ms (Views: 579.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/api.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-15 12:05:30 -0300
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 12:05:52 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"TOKEN"}
+Completed 400 Bad Request in 1093ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 12:06:35 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2018ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar.html" for ::1 at 2016-05-15 12:11:42 -0300
+Processing by HomeController#buscar as HTML
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 2159ms (Views: 175.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar.html" for ::1 at 2016-05-15 12:13:35 -0300
+Processing by HomeController#buscar as HTML
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1572ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 12:13:46 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2012ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 12:16:00 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"olasdnaxaskase", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1386ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 12:25:35 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"got", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2038ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (6.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUpdates (20160515174621)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (155.0ms)[0m  [1mCREATE TABLE "updates" ("id" serial primary key, "version" integer, "date" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (21.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160515174621"]]
+  [1m[36m (27.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (20.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'updates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mUpdate Load (26.7ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (30.1ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 14:51:41 -0300"], ["created_at", "2016-05-15 17:51:41.124309"], ["updated_at", "2016-05-15 17:51:41.124309"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mUpdate Load (22.8ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[36mUpdate Load (1.2ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[36mUpdate Load (1.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[36mUpdate Load (0.8ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mUpdate Load (0.8ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (1.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[36mUpdate Load (0.6ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (1.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "updates" SET "version" = $1, "date" = $2, "updated_at" = $3 WHERE "updates"."id" = $4[0m  [["version", 2], ["date", "2016-05-15 14:55:27 -0300"], ["updated_at", "2016-05-15 17:55:27.819327"], ["id", 1]]
+  [1m[35m (35.4ms)[0m  COMMIT
+  [1m[36mUpdate Load (0.8ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 14:56:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"got", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.7ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2119ms (Views: 7.1ms | ActiveRecord: 3.9ms)
+  [1m[36mUpdate Load (1.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "updates" SET "version" = $1, "date" = $2, "updated_at" = $3 WHERE "updates"."id" = $4[0m  [["version", 3], ["date", "2016-05-15 14:57:39 -0300"], ["updated_at", "2016-05-15 17:57:39.074988"], ["id", 1]]
+  [1m[35m (35.2ms)[0m  COMMIT
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 14:57:47 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"got", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.7ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1997ms (Views: 4.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 14:58:17 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"got", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (1.0ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1628ms (Views: 5.0ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 14:58:38 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1686ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 15:09:05 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.9ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2152ms (Views: 7.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/instagram/tag/buscar.js" for ::1 at 2016-05-15 15:09:53 -0300
+Processing by HomeController#buscar as JS
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2006ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 15:10:02 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1647ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 15:12:04 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1452ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 15:12:23 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2136ms (Views: 64.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 15:13:35 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.7ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1723ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 15:14:16 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"TOKEN"}
+Completed 400 Bad Request in 730ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 15:14:22 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.6ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1656ms (Views: 7.4ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (22.5ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:24:25 -0300"], ["created_at", "2016-05-15 18:24:25.666071"], ["updated_at", "2016-05-15 18:24:25.666071"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[35mUpdate Load (3.2ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mUpdate Load (0.6ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mUpdate Load (0.8ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36m (341.9ms)[0m  [1mDROP DATABASE IF EXISTS "T2_development"[0m
+  [1m[35m (197.0ms)[0m  DROP DATABASE IF EXISTS "T2_testing"
+  [1m[36m (1393.2ms)[0m  [1mCREATE DATABASE "T2_development" ENCODING = 'unicode'[0m
+  [1m[35m (319.3ms)[0m  CREATE DATABASE "T2_testing" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.8ms)[0m  CREATE TABLE "updates" ("id" serial primary key, "version" integer, "date" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160515174621')
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (29.1ms)[0m  CREATE TABLE "updates" ("id" serial primary key, "version" integer, "date" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (49.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160515174621')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:57:54 -0300"], ["created_at", "2016-05-15 18:57:54.662882"], ["updated_at", "2016-05-15 18:57:54.662882"]]
+  [1m[35m (7.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "updates" ("version", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["version", 1], ["date", "2016-05-15 15:58:16 -0300"], ["created_at", "2016-05-15 18:58:16.588848"], ["updated_at", "2016-05-15 18:58:16.588848"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mUpdate Load (0.9ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:19:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (27.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 400 Bad Request in 2101ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:22:04 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1769ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:41:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:35:in `each'
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:11:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (141.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (286.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (454.1ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:24:10 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1849ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+ArgumentError (too few arguments):
+  app/controllers/home_controller.rb:52:in `format'
+  app/controllers/home_controller.rb:52:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (149.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (257.9ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:24:34 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2387ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:26:02 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1781ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:41:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:35:in `each'
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:11:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (126.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (121.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (313.1ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:26:20 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"got", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 1724ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:26:30 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 500 Internal Server Error in 1752ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:41:in `block (2 levels) in buscar'
+  app/controllers/home_controller.rb:35:in `each'
+  app/controllers/home_controller.rb:35:in `block in buscar'
+  app/controllers/home_controller.rb:11:in `buscar'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.4ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:29:38 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+Completed 200 OK in 2219ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:34:47 -0300
+
+SyntaxError (/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:68: syntax error, unexpected tCONSTANT, expecting '}'
+...rsion + ", created at: " Update.first.date}
+...                               ^
+/Users/eczerega/Desktop/taleer/tareas/T2/T2_travis/app/controllers/home_controller.rb:68: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/home_controller.rb:68: syntax error, unexpected tCONSTANT, expecting '}'
+  app/controllers/home_controller.rb:68: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.3ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:35:09 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (1.1ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 2365ms (Views: 0.3ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:35:29 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.4ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1831ms (Views: 3.5ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:36:09 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[36mUpdate Load (0.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+Completed 200 OK in 2328ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+  [1m[36mUpdate Load (1.3ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "updates" SET "version" = $1, "date" = $2, "updated_at" = $3 WHERE "updates"."id" = $4[0m  [["version", 2], ["date", "2016-05-15 16:36:54 -0300"], ["updated_at", "2016-05-15 19:36:54.232078"], ["id", 1]]
+  [1m[35m (25.9ms)[0m  COMMIT
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 16:36:57 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (0.5ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 2129ms (Views: 4.7ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (49.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'updates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 17:42:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"TOKEN"}
+Completed 400 Bad Request in 701ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for ::1 at 2016-05-15 17:44:10 -0300
+Processing by HomeController#buscar as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"1442649438.1677ed0.da39352fcbe04712ba35f360d1a98762"}
+  [1m[35mUpdate Load (1.0ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1
+Completed 200 OK in 1729ms (Views: 3.8ms | ActiveRecord: 7.7ms)
+  [1m[36mUpdate Load (1.4ms)[0m  [1mSELECT  "updates".* FROM "updates"  ORDER BY "updates"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "updates" SET "version" = $1, "date" = $2, "updated_at" = $3 WHERE "updates"."id" = $4[0m  [["version", 3], ["date", "2016-05-15 17:46:19 -0300"], ["updated_at", "2016-05-15 20:46:19.973437"], ["id", 1]]
+  [1m[35m (35.0ms)[0m  COMMIT
